@@ -20,8 +20,11 @@ func main(){
 		w.Write([]byte("World sjbksj"))
 	})
 
+
 	http.HandleFunc("/bravo", HandlerBravo)
 
+	//qual colocamos um nil como handle no listenAndServe, quer dizer que estamos dizendo que iremos utilizar um defaultServeMux
+	//que é declarada de forma global, fazendo com que qualquer outra parte do codigo possa ser alterada
 	http.ListenAndServe(":5000", nil)
 
 }
