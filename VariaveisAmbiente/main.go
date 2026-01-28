@@ -19,7 +19,7 @@ func main(){
 	// 	fmt.Println(val)
 	// }
 
-	//agora usando uma biblioteca do golang
+	//agora usando uma biblioteca do golangadssads
 	//aqui podemos colocar as variaveis de ambiente em um arquivo .env
 	err := godotenv.Load()
 	if err != nil {panic(err)}
