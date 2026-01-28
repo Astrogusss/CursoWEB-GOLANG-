@@ -1,0 +1,11 @@
+{{ define "Paragrafo A"}}
+<p>Esse é o paragrafo A</p>
+{{ end }}
+
+<!-- temos que definir e marcar ele como template para ser retornado -->
+{{ define "Paragrafo B"}}
+<p>Esse é o paragrafo B</p>
+{{ end }}
+
+{{ template "Paragrafo A"}}
+{{ template "Paragrafo B"}}
